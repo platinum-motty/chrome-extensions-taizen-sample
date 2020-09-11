@@ -1,0 +1,19 @@
+{
+  "name": "background_script_sample",
+  "version": "0.0.0",
+  "description": "Background Script Sample",
+  "scripts": {
+    "build": "gulp build"
+  },
+  "devDependencies": {
+    "@types/chrome": "0.0.122",
+    "@types/jquery": "^3.5.1",
+    "del": "^5.1.0",
+    "fibers": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "sass": "^1.26.10",
+    "typescript": "^4.0.2"
+  }
+}

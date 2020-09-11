@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+html {
+  height: 80px;
+}
+
+#popup {
+  width: 10em;
+  text-align: center;
+
+  #counter {
+    font-size: 30px;
+  }
+
+  hr {
+    border-top: 1px dotted #333;
+  }
+
+  #counter-button-container {
+    font-size: 0;
+    user-select: none;
+
+    .counter-button {
+      font-size: 14px;
+      display: inline-block;
+      margin: 0 6px;
+      padding: 2px 4px;
+      border: 1px solid;
+      border-radius: 100px;
+      cursor: hand;
+    }
+  }
+}

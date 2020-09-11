@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+#option-body {
+    font-family: "Rounded Mplus 1c";
+    margin: 8px;
+
+    #page-title {
+        font-size: 18px;
+        font-weight: bolder;
+        color: #2965be;
+    }
+
+    .one-setting {
+        margin: 0 0 0 10px;
+
+        .setting-title {
+            font-size: 14px;
+            margin-top: 8px;
+
+            &::before {
+                content : "■";
+                font-size: 16px;
+                color: #2965be;
+            }
+        }
+
+        .setting-choice-area {
+            margin: 2px 0 0 8px;
+    
+            .radio-input {
+                display: none;
+            }
+
+            .radio-part {
+                position:relative;
+                padding-left: 20px;
+                margin-right: 20px;
+                font-size: 12px;
+
+                &::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 13px;
+                    height: 13px;
+                    border: 1px solid #999;
+                    border-radius: 50%;
+                }
+            }
+
+            .radio-input:checked + .radio-part {
+                color: #2965be;
+            }
+
+            .radio-input:checked + .radio-part::after{
+                content: "";
+                display: block;
+                position: absolute;
+                top: 2px;
+                left: 2px;
+                width: 11px;
+                height: 11px;
+                background: #2965be;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    #button-area {
+        margin-top: 24px;
+        text-align: center;
+
+        .option-button {
+            display: inline-block;
+            padding: 0.4em 1em;
+            margin-right: 4px;
+            text-decoration: none;
+            color: #2965be;
+            background-color: #FFF;
+            border: solid 2px #2965be;
+            border-radius: 3px;
+            width: 50px;
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
+        }
+    }
+}

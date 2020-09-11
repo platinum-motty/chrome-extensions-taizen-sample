@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../css/option.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script type="text/javascript" src="../js/option.js"></script>
+        <div id="option-body">
+            <div id="page-title">
+                オプション設定
+            </div>
+
+            <div class="one-setting">
+                <div class="setting-title">
+                    〇〇の表示／非表示
+                </div>
+                <div class="setting-choice-area">
+                    <label>
+                        <input type="radio" class="radio-input" name="private-msg" checked>
+                        <span class="radio-part">表示</span>
+                    </label>
+                    <label>
+                        <input type="radio" class="radio-input" name="private-msg">
+                        <span class="radio-part">非表示</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="one-setting">
+                <div class="setting-title">
+                    〇〇のテーマ
+                </div>
+                <div class="setting-choice-area">
+                    <label>
+                        <input type="radio" class="radio-input" name="header" checked>
+                        <span class="radio-part">標準</span>
+                    </label>
+                    <label>
+                        <input type="radio" class="radio-input" name="header">
+                        <span class="radio-part">簡易表示</span>
+                    </label>
+                </div>
+            </div>
+
+            <div id="button-area">
+                <span id="ok-button" class="option-button">
+                    OK
+                </span>
+                <span id="cancel-button" class="option-button">
+                    CANCEL
+                </span>
+        </div>
+    </body>
+</html>

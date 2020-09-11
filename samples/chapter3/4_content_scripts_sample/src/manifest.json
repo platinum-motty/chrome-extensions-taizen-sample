@@ -1,0 +1,11 @@
+{
+	"manifest_version": 2,
+	"name": "Content Scripts Sample",
+	"version": "1.0.0",
+	"content_scripts": [
+		{
+		  "matches": ["https://www.google.co.jp/"],
+		  "css": ["./css/content.css"]
+		}
+	]
+}
