@@ -1,10 +1,9 @@
 {
-	"manifest_version": 2,
+	"manifest_version": 3,
 	"name": "OverridePageSample",
 	"version": "1.0.0",
 	"description": "Override Page Sample",
 	"chrome_url_overrides": {
 		"newtab": "./html/newtab.html"
-	},
-	"content_security_policy": "script-src 'self' https://code.jquery.com; object-src 'self'"
+	}
 }

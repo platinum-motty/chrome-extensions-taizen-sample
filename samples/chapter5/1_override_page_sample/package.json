@@ -10,6 +10,7 @@
     "del": "^5.1.0",
     "fibers": "^5.0.0",
     "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
     "gulp-sass": "^4.1.0",
     "gulp-typescript": "^6.0.0-alpha.1",
     "sass": "^1.26.10",

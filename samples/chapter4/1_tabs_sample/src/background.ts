@@ -1,4 +1,4 @@
-chrome.browserAction.onClicked.addListener(() => {
+chrome.action.onClicked.addListener(() => {
     const query = {
         active: true, 
         currentWindow: true

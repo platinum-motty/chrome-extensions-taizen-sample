@@ -1,7 +1,7 @@
 {
-  "name": "browser_action_sample",
+  "name": "action_sample_1",
   "version": "0.0.0",
-  "description": "Browser Action Sample",
+  "description": "Action Sample 1",
   "scripts": {
     "build": "gulp build"
   },

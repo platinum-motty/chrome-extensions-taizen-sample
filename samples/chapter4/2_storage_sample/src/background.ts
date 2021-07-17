@@ -1,6 +1,6 @@
 const StorageKey = 'mylist';
 
-chrome.browserAction.onClicked.addListener(async () => {
+chrome.action.onClicked.addListener(async () => {
     const rand = Math.round(Math.random()*100);
 
     const res = await getByStorage(StorageKey);

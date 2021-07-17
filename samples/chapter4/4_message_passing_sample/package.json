@@ -1,12 +1,12 @@
 {
-  "name": "page_action_script_sample",
+  "name": "message_passing_sample",
   "version": "0.0.0",
-  "description": "Page Action Sample",
+  "description": "Message Passing Sample",
   "scripts": {
     "build": "gulp build"
   },
   "devDependencies": {
-    "@types/chrome": "0.0.122",
+    "@types/chrome": "0.0.145",
     "@types/jquery": "^3.5.1",
     "del": "^5.1.0",
     "fibers": "^5.0.0",

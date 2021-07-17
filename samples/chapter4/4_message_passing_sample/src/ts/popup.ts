@@ -13,12 +13,17 @@ $(async function () {
 
 async function getPriceListByDOM(): Promise<any> {
     return new Promise((resolve, reject) => {
-        chrome.tabs.getSelected((tab) => {
-            if (!tab.id) {
+        const query = {
+            active: true, 
+            currentWindow: true,
+        };
+        chrome.tabs.query(query, (tabs: chrome.tabs.Tab[]) => {
+            const tab = tabs[0];
+            if (!tab?.id) {
                 reject();
             } else {
                 const message = {uri: 'getPriceList'};
-                chrome.tabs.sendMessage(tab.id, message, (response) => {
+                chrome.tabs.sendMessage(tab?.id, message, (response) => {
                     resolve(response);
                 });
             }

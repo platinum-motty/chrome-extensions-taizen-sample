@@ -15,7 +15,7 @@ const tsProject = ts.createProject('tsconfig.json');
 // ファイルコピー
 function copy() {
     return gulp.src([
-        './src/**/*.*', '!src/sass/**/*.scss', '!src/ts/**/*.ts'
+        './src/**/*.*', '!src/sass/**/*.scss', '!src/**/*.ts'
       ], {
         base: './src'
       })
@@ -41,6 +41,13 @@ function script() {
     .js.pipe(gulp.dest('./dist/js'));
 }
 
+// ServiceWorkerのトランスパイル
+function service_worker() {
+    return gulp.src('./src/*.ts')
+    .pipe(tsProject())
+    .js.pipe(gulp.dest('./dist'));
+}
+
 const build = gulp.series (
     clean,
     gulp.parallel(
@@ -48,6 +55,7 @@ const build = gulp.series (
         sass,
         script,
     ),
+    service_worker,
 );
 
 exports.clean = clean;
